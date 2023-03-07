@@ -1,4 +1,4 @@
-let container = document.querySelector("container");
+let box_c = document.querySelector("box_c");
 let gridButton = document.getElementById("submit-grid");
 let clearGridButton = document.getElementById("clear-grid");
 let gridWidth = document.getElementById("X-range");
@@ -23,7 +23,6 @@ let events = {
 };
 
 // dorw and erase for //
-
 
 
 

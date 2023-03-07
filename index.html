@@ -10,29 +10,39 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-
-    <div class="contaner">
-      <div class="main">
-        <div class="secson_1">
-          <div class="slider">
-            <label for="X-range">Grid X</label>
-            <input type="range" id="X-range" min="1" max="100" />
-            <span id="X-value">00</span>
-          </div>
-          <div class="slider">
-            <label for="Y-range">Grid Y</label>
-            <input type="range" id="Y-range" min="1" max="100" />
-            <span id="Y-value">00</span>
-          </div>
-        </div>
-        <div class="secson_1">
-          <button id="submit-grid">Create Grid</button>
-          <input type="color" id="color-input">
-          <button id="erase-btn">Erase</button>
+  <header>
+    <p>Grid sketch pad</p>
+  </header>
+     
+  <main>
+  <div class="wrapper">
+    <div class="options">
+      <div class="opt-wrapper">
+        <div class="slider">
+          <label for="width-range">Grid X</label>
+          <input type="range" id="width-range" min="1" >
+          <span id="width-value">00</span> 
+        </div> 
+        <div class="slider">
+          <label for="height-range">Grid Y</label>
+          <input type="range" id="height-range" min="1" max="100">
+          <span id="height-value">00</span>
         </div>
       </div>
-      <div class="container"></div>
+      <div class="opt-wrapper">
+        <button id="submit-grid">Create Grid</button> 
+        <!-- <button id="clear-grid">Clear Grid</button>  -->
+        <input type="color" id="color-input" /> 
+        <button id="erase-btn">Erase</button> 
+        <!-- <button id="paint-btn">Paint</button>  -->
+      </div>
     </div>
+  </div> 
+  </main>
+    
+  <footer>
+    <div class="box_c"></div>
+  </footer>
     <script src="./script.js"></script>
   </body>
 </html>
