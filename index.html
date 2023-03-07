@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game-1</title>
-</head>
-<body>
-    <h1> game maker</h1>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <div class="contaner">
+      <div class="main">
+        <div class="secson_1">
+          <div class="slider">
+            <label for="X-range">Grid X</label>
+            <input type="range" id="X-range" min="1" max="100" />
+            <span id="X-value">00</span>
+          </div>
+          <div class="slider">
+            <label for="Y-range">Grid Y</label>
+            <input type="range" id="Y-range" min="1" max="100" />
+            <span id="Y-value">00</span>
+          </div>
+        </div>
+        <div class="secson_1">
+          <button id="submit-grid">Create Grid</button>
+          <input type="color" id="color-input">
+          <button id="erase-btn">Erase</button>
+        </div>
+      </div>
+      <div class="container"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
